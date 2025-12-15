@@ -1,0 +1,107 @@
+.offers {
+  padding: 80px 60px;
+  background: #fff;
+}
+
+/* HEADER */
+.offers-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.offers-header h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.offers-header p {
+  max-width: 520px;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+.view-all {
+  color: #000;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* GRID */
+.offers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* CARD */
+.offer-card {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  height: 260px;
+}
+
+/* IMAGE */
+.offer-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.75);
+}
+
+/* DISCOUNT BADGE */
+.discount {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: #fff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  z-index: 2;
+}
+
+/* CONTENT */
+.offer-content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  color: white;
+}
+
+.offer-content h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.desc {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.expiry {
+  font-size: 13px;
+  opacity: 0.85;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.offer-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .offers-header {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

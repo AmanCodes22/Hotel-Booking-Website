@@ -1,0 +1,113 @@
+.hero {
+    height: 100vh;
+    background: url("../assets/WhatsApp\ Image\ 2025-12-12\ at\ 23.59.24_d8920b79.jpg") center/cover no-repeat;
+    position: relative;
+    padding-top: 200px; 
+    filter: brightness(0.75);
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+}
+
+.hero-content {
+    position: relative;
+    max-width: 900px;
+    padding: 0 60px;
+    color: white;
+}
+
+.badge-1 {
+    background: #3b82f6;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 54px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 650px;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* SEARCH BOX */
+.search-box {
+    display: flex;
+    gap: 15px;
+    background: white;
+    padding: 18px;
+    border-radius: 14px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.field ,select{
+    display: flex;
+    flex-direction: column;
+}
+
+.field label ,select{
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.field input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    width: 150px;
+}
+#select{
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  width: 90px;
+  
+}
+
+.search-btn {
+    background: black;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .search-box {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .field input {
+        width: 100%;
+    }
+}
+
+
+/* For smaller screens */
+@media (max-width: 768px) {
+  .home {
+    height: 70vh;
+  }
+}
